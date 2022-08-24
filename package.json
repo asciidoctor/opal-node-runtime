@@ -22,6 +22,7 @@
   },
   "type": "module",
   "main": "./src/index.cjs",
+  "browser": "./src/index.mjs",
   "exports": {
     "import": "./src/index.js",
     "require": "./src/index.cjs"
@@ -51,6 +52,7 @@
     "eslint": "~8.22",
     "mocha": "~10.0",
     "rollup": "~3.20",
+    "rollup-plugin-re": "^1.0.7",
     "standard": "~17.0"
   },
   "standard": {
