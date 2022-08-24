@@ -1,6 +1,6 @@
 # Opal Runtime for Asciidoctor.js
 
-[![Travis build status](https://img.shields.io/travis/Mogztter/asciidoctor-opal-node-runtime/master.svg)](https://travis-ci.org/Mogztter/asciidoctor-opal-node-runtime)
+[![Build](https://github.com/Mogztter/asciidoctor-opal-node-runtime/actions/workflows/build.yml/badge.svg)](https://github.com/Mogztter/asciidoctor-opal-node-runtime/actions/workflows/build.yml)
 [![npm version](http://img.shields.io/npm/v/asciidoctor-opal-runtime.svg)](https://www.npmjs.org/package/asciidoctor-opal-runtime)
 
 
