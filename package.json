@@ -32,11 +32,11 @@
     "lint": "standard src/index.js spec",
     "prepublishOnly": "npm run build"
   },
-  "homepage": "http://github.com/mogztter/asciidoctor-opal-node-runtime",
-  "bugs": "https://github.com/mogztter/asciidoctor-opal-node-runtime/issues",
+  "homepage": "http://github.com/asciidoctor/opal-node-runtime",
+  "bugs": "https://github.com/asciidoctor/opal-node-runtime/issues",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mogztter/asciidoctor-opal-node-runtime.git"
+    "url": "git://github.com/asciidoctor/opal-node-runtime.git"
   },
   "dependencies": {
     "glob": "8.0.3",
