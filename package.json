@@ -32,7 +32,10 @@
     "lint": "standard src/index.js spec",
     "prepublishOnly": "npm run build"
   },
-  "homepage": "http://github.com/asciidoctor/opal-node-runtime",
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://github.com/asciidoctor/opal-node-runtime",
   "bugs": "https://github.com/asciidoctor/opal-node-runtime/issues",
   "repository": {
     "type": "git",
