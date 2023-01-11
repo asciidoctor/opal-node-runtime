@@ -10,13 +10,13 @@ If you are looking for a general purpose Opal runtime, please use https://www.np
 ## Usage
 
 ```javascript
-import Opal from 'asciidoctor-opal-runtime'
+import Opal from '@asciidoctor/opal-runtime'
 // Now let's have fun with Opal!
 ```
 
 This library is also available as a CommonJS module:
 
 ```javascript
-const Opal = require('asciidoctor-opal-runtime')
+const Opal = require('@asciidoctor/opal-runtime')
 // Now let's have fun with Opal!
 ```
