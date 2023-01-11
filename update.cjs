@@ -49,6 +49,7 @@ if (!nodejsSource.includes('import __fs__ from \'fs\';')) {
     // fs
     .replace(/self\.__fs__ = require\('fs'\);/g, 'self.__fs__ = __fs__;')
     .replace(/\s+var __fs__ = self\.__fs__;/g, '')
+    .replace(/\s+var __fs__ = require\('fs'\);/g, '')
     // util
     .replace(/self\.__util__ = require\('util'\);/g, 'self.__util__ = __util__;')
     .replace(/\s+var __util__ = self\.__util__;/g, '')
