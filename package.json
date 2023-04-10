@@ -24,8 +24,11 @@
   "main": "./src/index.cjs",
   "browser": "./src/index.mjs",
   "exports": {
-    "import": "./src/index.js",
-    "require": "./src/index.cjs"
+    "node": {
+      "import": "./src/index.js",
+      "require": "./src/index.cjs"
+    },
+    "default": "./src/index.mjs"
   },
   "scripts": {
     "build": "rollup --config",
