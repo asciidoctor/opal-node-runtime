@@ -9,7 +9,7 @@
     "ruby"
   ],
   "author": "Guillaume Grossetie",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "license": "MIT",
   "engines": {
     "node": ">=16"
