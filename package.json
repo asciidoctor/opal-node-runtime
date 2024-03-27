@@ -46,17 +46,17 @@
     "url": "git://github.com/asciidoctor/opal-node-runtime.git"
   },
   "dependencies": {
-    "glob": "8.1.0",
+    "glob": "10.3.10",
     "unxhr": "1.2.0"
   },
   "devDependencies": {
-    "chai": "~4.3",
+    "chai": "~5.1.0",
     "dirty-chai": "~2.0",
-    "eslint": "~8.22",
-    "mocha": "~10.0",
-    "rollup": "~3.20",
+    "eslint": "~8.57.0",
+    "mocha": "~10.4.0",
+    "rollup": "~4.13.0",
     "rollup-plugin-re": "^1.0.7",
-    "standard": "~17.0"
+    "standard": "~17.1.0"
   },
   "standard": {
     "env": {
