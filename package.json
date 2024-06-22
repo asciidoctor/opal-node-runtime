@@ -12,7 +12,7 @@
   "version": "3.0.1",
   "license": "MIT",
   "engines": {
-    "node": ">=16"
+    "node": ">=18"
   },
   "files": [
     "src"
@@ -46,17 +46,17 @@
     "url": "git://github.com/asciidoctor/opal-node-runtime.git"
   },
   "dependencies": {
-    "glob": "8.1.0",
+    "glob": "10.4.2",
     "unxhr": "1.2.0"
   },
   "devDependencies": {
-    "chai": "~4.3",
+    "chai": "~4.4",
     "dirty-chai": "~2.0",
-    "eslint": "~8.22",
-    "mocha": "~10.0",
-    "rollup": "~3.20",
-    "rollup-plugin-re": "^1.0.7",
-    "standard": "~17.0"
+    "eslint": "~9.5",
+    "mocha": "~10.4",
+    "rollup": "~3.29",
+    "rollup-plugin-re": "1.0.7",
+    "standard": "~17.1"
   },
   "standard": {
     "env": {
