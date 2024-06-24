@@ -64,7 +64,7 @@ if (!nodejsSource.includes('import __fs__ from \'fs\';')) {
   fs.writeFileSync(nodejsSourceFile, `import __fs__ from 'fs';
 import __path__ from 'path';
 import __util__ from 'util';
-import __glob__ from 'glob';
+import { glob as __glob__ } from 'glob';
 import __os__ from 'os';
 import __xmlhttprequest__ from 'unxhr';
 
