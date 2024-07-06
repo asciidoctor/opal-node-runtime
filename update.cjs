@@ -53,9 +53,9 @@ if (!nodejsSource.includes('import __fs__ from \'fs\';')) {
     // util
     .replace(/self\.__util__ = require\('util'\);/g, 'self.__util__ = __util__;')
     .replace(/\s+var __util__ = self\.__util__;/g, '')
-    // glob
-    .replace(/self\.__glob__ = require\('glob'\);/g, 'self.__glob__ = __glob__;')
-    .replace(/\s+var __glob__ = self\.__glob__;/g, '')
+    // picomatch
+    .replace(/self\.__pm__ = require\('picomatch'\);/g, 'self.__pm__ = __pm__;')
+    .replace(/\s+var __pm__ = self\.__pm__;/g, '')
     // os
     .replace(/self\.__os__ = require\('os'\);/g, 'self.__os__ = __os__;')
     .replace(/\s+var __os__ = self\.__os__;/g, '')
@@ -64,7 +64,7 @@ if (!nodejsSource.includes('import __fs__ from \'fs\';')) {
   fs.writeFileSync(nodejsSourceFile, `import __fs__ from 'fs';
 import __path__ from 'path';
 import __util__ from 'util';
-import { glob as __glob__ } from 'glob';
+import __pm__ from 'picomatch';
 import __os__ from 'os';
 import __xmlhttprequest__ from 'unxhr';
 

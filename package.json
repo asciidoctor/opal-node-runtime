@@ -46,7 +46,7 @@
     "url": "git://github.com/asciidoctor/opal-node-runtime.git"
   },
   "dependencies": {
-    "glob": "10.4.2",
+    "picomatch": "4.0.2",
     "unxhr": "1.2.0"
   },
   "devDependencies": {

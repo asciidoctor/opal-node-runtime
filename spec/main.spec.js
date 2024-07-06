@@ -60,5 +60,12 @@ describe('Opal Node Runtime', function () {
       const currentDir = Dir.$pwd()
       expect(currentDir).to.equal(process.cwd().replace(/\\/g, '/'))
     })
+    it('should list files using Dir.glob', function () {
+      Opal.load('nodejs')
+      const Dir = Opal.const_get_relative([], 'Dir')
+      const workingDirectory = process.cwd().replace(/\\/g, '/')
+      const result = Dir.$glob(`${workingDirectory}/*.md`)
+      expect(result).to.deep.equal(['README.md'])
+    })
   })
 })
