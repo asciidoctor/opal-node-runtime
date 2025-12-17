@@ -60,7 +60,12 @@ if (!nodejsSource.includes('import __fs__ from \'fs\';')) {
     .replace(/self\.__os__ = require\('os'\);/g, 'self.__os__ = __os__;')
     .replace(/\s+var __os__ = self\.__os__;/g, '')
     .replace(/\s+self\.\$require\("nodejs\/kernel"\);/g, '')
-    .replace(/\/\*[^*]+\*\/\nOpal\.modules\["nodejs\/kernel"] = function\(Opal\) {.+?(?=};)};/gs, '')
+    .replace(/\nOpal\.modules\["native"] = function\(Opal\) {.+?(?=\nOpal\.modules\[")/gs, '')
+    .replace(/\nOpal\.modules\["buffer\/array"] = function\(Opal\) {.+?(?=\nOpal\.modules\[")/gs, '')
+    .replace(/\nOpal\.modules\["buffer\/view"] = function\(Opal\) {.+?(?=\nOpal\.modules\[")/gs, '')
+    .replace(/\nOpal\.modules\["buffer"] = function\(Opal\) {.+?(?=\nOpal\.modules\[")/gs, '')
+    .replace(/\nOpal\.modules\["corelib\/process\/status"] = function\(Opal\) {.+?(?=\nOpal\.modules\[")/gs, '')
+    .replace(/\nOpal\.modules\["nodejs\/kernel"] = function\(Opal\) {.+?(?=\nOpal\.modules\[")/gs, '')
   fs.writeFileSync(nodejsSourceFile, `import __fs__ from 'fs';
 import __path__ from 'path';
 import __util__ from 'util';
