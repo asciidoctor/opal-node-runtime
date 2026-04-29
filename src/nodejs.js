@@ -533,7 +533,7 @@ Opal.modules["nodejs/dir"] = function(Opal) {
     if (self.__os__ == null) self.__os__ = nil;
 
     
-    self.__glob__ = require('glob');
+    self.__glob__ = require('fast-glob');
     self.__fs__ = require('fs');
     self.__path__ = require('path');
     self.__os__ = require('os');

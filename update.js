@@ -23,6 +23,14 @@ if (process.env.SKIP_BUILD) {
 const files = ['nodejs.js', 'opal.js', 'pathname.js', 'stringio.js'];
 files.forEach((file) => {
   console.log(`Copy ${opalDirectory}/build/${file} to src/${file}`);
-  fs.createReadStream(`${opalDirectory}/build/${file}`)
-    .pipe(fs.createWriteStream(`src/${file}`))
+  const dest = `src/${file}`;
+  const writeStream = fs.createWriteStream(dest);
+  fs.createReadStream(`${opalDirectory}/build/${file}`).pipe(writeStream)
+  if (file === 'nodejs.js') {
+    writeStream.on('finish', () => {
+      const content = fs.readFileSync(dest, 'utf8');
+      fs.writeFileSync(dest, content.replace("require('glob')", "require('fast-glob')"));
+      console.log(`Patched src/nodejs.js: replaced require('glob') with require('fast-glob')`);
+    });
+  }
 });

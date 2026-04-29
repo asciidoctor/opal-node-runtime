@@ -27,15 +27,15 @@
     "prepublishOnly": "node npm/prepublish.js",
     "postpublish": "node npm/postpublish.js"
   },
-  "homepage": "http://github.com/mogztter/asciidoctor-opal-node-runtime",
-  "bugs": "https://github.com/mogztter/asciidoctor-opal-node-runtime/issues",
+  "homepage": "https://github.com/asciidoctor/asciidoctor-opal-node-runtime",
+  "bugs": "https://github.com/asciidoctor/asciidoctor-opal-node-runtime/issues",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mogztter/asciidoctor-opal-node-runtime.git"
+    "url": "git://github.com/asciidoctor/asciidoctor-opal-node-runtime.git"
   },
   "dependencies": {
-    "glob": "7.1.3",
-    "unxhr": "1.0.1"
+    "fast-glob": "~3.3",
+    "unxhr": "~1.2"
   },
   "devDependencies": {
     "chai": "4.2.0",
