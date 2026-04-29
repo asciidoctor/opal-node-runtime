@@ -34,7 +34,7 @@
     "url": "git://github.com/asciidoctor/asciidoctor-opal-node-runtime.git"
   },
   "dependencies": {
-    "glob": "~13.0",
+    "fast-glob": "~3.3",
     "unxhr": "~1.2"
   },
   "devDependencies": {
